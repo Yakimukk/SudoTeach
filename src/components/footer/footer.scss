@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 400;
+  src: url('../../font/Ubunto/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 700;
+  src: url('../../font/Ubunto/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  src: url('../../font/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url('../../font/Nunito/Nunito-Bold.ttf');
+}
+
+.footer {
+  padding-top: 30px;
+  height: 136px;
+  background-color: #fff;
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    .navbar-nav {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: start;
+      list-style-type: none;
+      .nav-item {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+      }
+    }
+    .navbar-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      .navbar-nav {
+        padding: 0;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        list-style-type: none;
+        .nav-item {
+          display: flex;
+          align-items: center;
+          padding-right: 20px;
+          padding-left: 0;
+          .nav-link{
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            color: #999;
+            font-weight: 400;
+            font-size: 16px;
+          }
+        }
+      }
+      span {
+        padding-top: 18px;
+        font-family: 'Ubuntu', sans-serif;
+        color: #999;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+
+  }
+}
