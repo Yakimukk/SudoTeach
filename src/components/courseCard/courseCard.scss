@@ -1,0 +1,79 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  src: url('../../font/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url('../../font/Nunito/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 900;
+  src: url('../../font/Nunito/Nunito-ExtraBold.ttf');
+}
+
+.courseCard {
+  width: 430px;
+  height: 260px;
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  .courseCard-top {
+    display: flex;
+    justify-content: space-between;
+    .courseCard-info {
+      .courseCard-info-title {
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+      }
+      .courseCard-info-text {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+  .courseCard-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    .courseCard-info {
+      .courseCard-info-creator {
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+      }
+      .courseCard-info-price {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: #489EFD;
+      }
+    }
+    .courseCard-button {
+      width: 127px;
+      height: 42px;
+      border-radius: 8px;
+      background-color: #007AFF;
+      color: #fff;
+      font-size: 16px;
+      font-family: 'Nunito', sans-serif;
+      border: none;
+    }
+  }
+}

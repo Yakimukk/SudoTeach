@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 400;
+  src: url('../../font/Ubunto/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 700;
+  src: url('../../font/Ubunto/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  src: url('../../font/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url('../../font/Nunito/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 900;
+  src: url('../../font/Nunito/Nunito-ExtraBold.ttf');
+}
+
+.main {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  .banner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 42px;
+  }
+  .title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 36px;
+    font-weight: 900;
+  }
+  .popular {
+    margin-bottom: 42px;
+    .popular-courseCards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 24px;
+      justify-content: space-between;
+    }
+  }
+  .recommendation {
+    margin-bottom: 16px;
+    .recommendation-courseCards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 24px;
+      justify-content: space-between;
+    }
+  }
+  .blog {
+    margin-bottom: 36px;
+    .blog-blogCards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 16px;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  src: url('../../font/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url('../../font/Nunito/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 900;
+  src: url('../../font/Nunito/Nunito-ExtraBold.ttf');
+}
+
+.blogCard {
+  width: 420px;
+  height: 266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .blogCard-img {
+    border-radius: 16px;
+  }
+  .blogCard-data {
+    padding-top: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+  }
+  .blogCard-text {
+    margin: 0;
+    padding-top: 1px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999;
+  }
+}
