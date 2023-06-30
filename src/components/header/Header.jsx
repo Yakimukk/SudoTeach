@@ -3,14 +3,14 @@ import logo from '../../images/logo.svg';
 import icon from '../../images/Icon.svg';
 import profile from '../../images/profile.svg';
 import './header.scss';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const Header = () => (
 	<header className="header container">
 		<nav className="navbar">
-			<a className="navbar-brand" href="#">
+			<Link className="navbar-brand" to="/">
 				<img src={logo} alt="logo" />
-			</a>
+			</Link>
 			<ul className="navbar-nav">
 				<li className="nav-item">
 					<NavLink className="nav-link nav-link-button">
