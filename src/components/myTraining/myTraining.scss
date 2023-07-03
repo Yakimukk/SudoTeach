@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+
+.myTraining {
+  padding: 40px;
+  width: 999px;
+  height: 640px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 430px);
+  gap: 40px;
+}

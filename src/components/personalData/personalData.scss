@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 400;
+  src: url('../../font/Ubunto/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 700;
+  src: url('../../font/Ubunto/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  src: url('../../font/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url('../../font/Nunito/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 900;
+  src: url('../../font/Nunito/Nunito-ExtraBold.ttf');
+}
+
+.personalData {
+  padding: 40px;
+  height: 348px;
+  width: 999px;
+  border-radius: 12px;
+  background-color: #fff;
+  .personalData-title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+  }
+  .personalData-form {
+    display: flex;
+    flex-direction: column;
+    .personalData-block {
+      margin-bottom: 24px;
+    }
+    span {
+      border-bottom: 1px solid #E7E7E7;
+      margin-bottom: 24px;
+    }
+    input, button {
+      
+      outline: none;
+    }
+    input { 
+      margin-right: 16px;
+      position: relative;
+      padding: 16px 0 12px 21px;
+      width: 260px;
+      height: 50px;
+      background: #EFF2F7;
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      color: #999;
+      font-weight: 400;
+      border: 1px solid #E7E7E7;
+      border-radius: 15px;
+    }
+    // label {
+    //   position: relative;
+    // }
+    // label::nth-child(-n + 2) {
+    //   margin-bottom: 24px;
+    // }
+    // label:nth-child(-n + 2):before {
+    //   content: '';
+    //   background: #F2F2F0;
+    //   height: 1px;
+    //   position: absolute;
+    //   bottom: -24px;
+    //   width: 100%;
+    // }
+    button {
+      background-color: #007AFF;
+      height: 42px;
+      width: 122px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+}

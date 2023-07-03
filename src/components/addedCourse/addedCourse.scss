@@ -24,6 +24,7 @@
   width: 430px;
   height: 260px;
   background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -56,23 +57,14 @@
   .courseCard-bottom {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     .courseCard-info {
-      .courseCard-info-creator {
-        margin: 0;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 900;
-        font-size: 18px;
-      }
-      .courseCard-info-price {
-        font-family: 'Nunito', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        color: #489EFD;
-      }
+      color: #999;
+      font-size: 16px;
+      font-weight: 900;
     }
     .courseCard-button {
-      width: 127px;
+      width: 177px;
       height: 42px;
       border-radius: 8px;
       background-color: #007AFF;

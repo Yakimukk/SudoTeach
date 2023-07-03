@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 400;
+  src: url('../../font/Ubunto/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 700;
+  src: url('../../font/Ubunto/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  src: url('../../font/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url('../../font/Nunito/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 900;
+  src: url('../../font/Nunito/Nunito-ExtraBold.ttf');
+}
+
+.main {
+  min-height: calc(100vh - 216px);
+  .profile {
+    padding-top: 24px;
+    display: flex;
+    .profile-bloks {
+      margin-right: 24px;
+      width: 317px;
+      .profile-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        .profile-info-text {
+          margin-left: 28px;
+          font-family: 'Nunito', sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          color: #999;
+          p {
+            margin: 0;
+          }
+        }
+      }
+      .profile-button {
+        padding: 31px 28px 27px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        height: 80px;
+        width: 317px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        color: #999;
+        font-size: 16px;
+        margin-bottom: 16px;
+        img {
+          stroke: #999
+        }
+      }
+      .profile-button:focus {
+        background-color: #007AFF;
+        color: #fff;
+        img {
+          stroke: #fff
+        }
+       }
+       .active {
+        background-color: #007AFF;
+        color: #fff;
+        img {
+          stroke: #fff
+        }
+       }
+    }
+  }
+}

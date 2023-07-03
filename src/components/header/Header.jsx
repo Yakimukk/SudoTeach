@@ -8,9 +8,9 @@ import { Link, NavLink } from 'react-router-dom';
 export const Header = () => (
 	<header className="header container">
 		<nav className="navbar">
-			<Link className="navbar-brand" to="/">
+			<NavLink className="navbar-brand" to="/">
 				<img src={logo} alt="logo" />
-			</Link>
+			</NavLink>
 			<ul className="navbar-nav">
 				<li className="nav-item">
 					<NavLink className="nav-link nav-link-button">
@@ -19,13 +19,15 @@ export const Header = () => (
 					</NavLink>
 				</li>
 				<li className="nav-item">
-					<form className="nav-search">
+					<form className="nav-search" action="/searchResults">
 						<button type="submit"></button>
 						<input type="text" placeholder="Поиск курсов"></input>
 					</form>
 				</li>
 				<li className="nav-item">
-					<NavLink className="nav-link">Мое обучение</NavLink>
+					<NavLink className="nav-link" to="/profile">
+						Мое обучение
+					</NavLink>
 				</li>
 				<li className="nav-item">
 					<NavLink className="nav-link">

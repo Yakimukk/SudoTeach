@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export const AboutCourse = () => {
 	return (
 		<Fragment>
-			<main className="main container">
+			<main className="main container main-aboutCourse">
 				<section className="bannerCourse">
 					<div className="bannerCourse-info">
 						<div className="bannerCourse-button">Курс</div>

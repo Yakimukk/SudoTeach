@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import pyhtonCard from '../../images/pyhtonCard.svg';
-import './courseCard.scss';
+import './addedCourse.scss';
 import { Link } from 'react-router-dom';
 
-export const CourseCard = () => {
+export const AddedCourse = () => {
 	return (
 		<Fragment>
 			<div className="courseCard">
@@ -21,13 +21,10 @@ export const CourseCard = () => {
 					<img src={pyhtonCard} alt="pyhtonCard"></img>
 				</div>
 				<div className="courseCard-bottom">
-					<div className="courseCard-info">
-						<h3 className="courseCard-info-creator">Тимур Сагитов</h3>
-						<span className="courseCard-info-price">1050 RUB</span>
-					</div>
-					<Link to="/aboutCourse">
-						<button className="courseCard-button">Записаться</button>
+					<Link to="/">
+						<button className="courseCard-button">Продолжить курс</button>
 					</Link>
+					<div className="courseCard-info">1/15 модуль</div>
 				</div>
 			</div>
 		</Fragment>
