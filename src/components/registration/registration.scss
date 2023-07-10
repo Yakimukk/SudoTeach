@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 400;
+  src: url('../../font/Ubunto/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: Ubuntu;
+  font-weight: 700;
+  src: url('../../font/Ubunto/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 400;
+  src: url('../../font/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 700;
+  src: url('../../font/Nunito/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  font-weight: 900;
+  src: url('../../font/Nunito/Nunito-ExtraBold.ttf');
+}
+
+.registration-popup {
+  padding: 31px 0 44px 40px;
+  width: 800px;
+  height: 590px;
+  border-radius: 32px;
+  background: #fff;
+  background-image: url(../../images/popupBackground.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+
+  .registration-form {
+    width: 386px;
+    display: grid;
+    grid-template-columns: repeat(2, 187px) ;
+    grid-auto-flow: row dense;
+    
+    gap: 8px;
+    p {
+      margin: 0 0 4px 0;
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+
+    }
+    input {
+      border: 1px solid #E7E7E7;
+      outline: none;
+      border-radius: 15px;
+      background: #EFF2F7;
+      padding-left: 20px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      color: #999;
+      font-weight: 400;
+      height: 50px;
+    }
+    .registration-form-email, .registration-form-password {
+      width: 386px;
+      grid-column: span 2;
+      input {
+        width: 100%;
+      }
+    }
+    .registration-form-name {
+      width: 187px;
+      input {
+        width: 100%;
+      }
+    }
+    .registration-form-submit {
+      margin-top: 24px;
+      width: 386px;
+      .registration-form-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background: #489EFD;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        height: 50px;
+      }
+      p {
+        text-align: center;
+        margin: 24px 0 0 0;
+        .link {
+          text-decoration: none;
+          font-family: 'Nunito', sans-serif;
+          font-size: 14px;
+          color: #333;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
