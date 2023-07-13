@@ -1,0 +1,41 @@
+.headerCourse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #489EFD;
+  color: #999999;
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar-group {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .navbar-pagination {
+    margin-left: 210px;
+    display: flex;
+    align-items: center;
+    a {
+      margin: 0 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #999;
+      width: 26px;
+      height: 26px;
+      background-color: #fff;
+      border-radius: 3px;
+    }
+    a.active {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #333;
+      color: #333;
+    }
+  }
+}

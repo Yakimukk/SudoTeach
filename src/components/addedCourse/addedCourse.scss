@@ -1,25 +1,3 @@
-*{
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: Nunito;
-  font-weight: 400;
-  src: url('../../font/Nunito/Nunito-Regular.ttf');
-}
-
-@font-face {
-  font-family: Nunito;
-  font-weight: 700;
-  src: url('../../font/Nunito/Nunito-Bold.ttf');
-}
-
-@font-face {
-  font-family: Nunito;
-  font-weight: 900;
-  src: url('../../font/Nunito/Nunito-ExtraBold.ttf');
-}
-
 .courseCard {
   width: 430px;
   height: 260px;

@@ -1,37 +1,3 @@
-*{
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: Ubuntu;
-  font-weight: 400;
-  src: url('../../font/Ubunto/Ubuntu-Regular.ttf');
-}
-
-@font-face {
-  font-family: Ubuntu;
-  font-weight: 700;
-  src: url('../../font/Ubunto/Ubuntu-Bold.ttf');
-}
-
-@font-face {
-  font-family: Nunito;
-  font-weight: 400;
-  src: url('../../font/Nunito/Nunito-Regular.ttf');
-}
-
-@font-face {
-  font-family: Nunito;
-  font-weight: 700;
-  src: url('../../font/Nunito/Nunito-Bold.ttf');
-}
-
-@font-face {
-  font-family: Nunito;
-  font-weight: 900;
-  src: url('../../font/Nunito/Nunito-ExtraBold.ttf');
-}
-
 .main-aboutCourse {
   padding: 0;
   .bannerCourse {
