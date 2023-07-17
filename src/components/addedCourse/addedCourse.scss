@@ -1,4 +1,4 @@
-.courseCard {
+.added-course {
   width: 430px;
   height: 260px;
   background-color: #fff;
@@ -8,48 +8,48 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 32px;
-  .courseCard-top {
+  &__top {
     display: flex;
     justify-content: space-between;
-    .courseCard-info {
-      max-height: 83px;
-      .courseCard-info-title {
-        margin: 0;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 900;
-        font-size: 18px;
-      }
-      .courseCard-info-text {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: clip;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        color: #999;
-      }
-    }
   }
-  .courseCard-bottom {
+  &__block {
+    max-height: 83px;
+  }
+  &__title {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+  }
+  &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: clip;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+  }
+  &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .courseCard-info {
-      color: #999;
-      font-size: 16px;
-      font-weight: 900;
-    }
-    .courseCard-button {
-      width: 177px;
-      height: 42px;
-      border-radius: 8px;
-      background-color: #007AFF;
-      color: #fff;
-      font-size: 16px;
-      font-family: 'Nunito', sans-serif;
-      border: none;
-    }
+  }
+  &__info {
+    color: #999;
+    font-size: 16px;
+    font-weight: 900;
+  }
+  &__button {
+    width: 177px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #007AFF;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    border: none;
   }
 }

@@ -1,6 +1,6 @@
-.main-aboutCourse {
+.main__about-course {
   padding: 0;
-  .bannerCourse {
+  .banner-course {
     padding: 0 50px;
     width: 100%;
     background-color: #489EFD;
@@ -9,76 +9,105 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .bannerCourse-info {
+    &__info {
       max-width: 656px;
-      .bannerCourse-button {
-        width: 121px;
-        height: 24px;
-        background-color: #fff;
-        border-radius: 16px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: #999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    }
+    &__button {
+      width: 121px;
+      height: 24px;
+      background-color: #fff;
+      border-radius: 16px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      }
-      .bannerCourse-title {
-        margin: 8px 0;
-        font-family: 'Nunito', sans-serif;
-        font-size: 52px;
-        font-weight: 900;
-        color: #fff;
-      }
-      .bannerCourse-text {
-        margin: 0;
-        font-family: 'Nunito', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: #fff;
-      }
+    }
+    &__title {
+      margin: 8px 0;
+      font-family: 'Nunito', sans-serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: #fff;
+    }
+    &__text {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
     }
   }
-  .aboutCourse {
+  .about-course {
     padding: 0 50px;
     margin: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: start;
-    .aboutCourse-info {
+    &__info {
       max-width: 725px;
-      .aboutCourse-info-title {
-        margin: 0;
-        font-family: 'Nunito', sans-serif;
-        font-size: 52px;
-        font-weight: 900;
-        color: #333;
-      }
-      .aboutCourse-info-list {
-        .aboutCourse-item {
-          margin: 0;
-          font-family: 'Nunito', sans-serif;
-          font-size: 24px;
-          font-weight: 400;
-          color: #999;
-        }
-      }
-      .aboutCourse-info-text {
-        margin: 0;
-        font-family: 'Nunito', sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-        color: #999;
-      }
     }
-    .aboutCourse-card {
+    &__title {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      font-size: 52px;
+      font-weight: 900;
+      color: #333;
+    }
+    &__item {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #999;
+    }
+    &__text {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #999;
+    }
+    &__card {
       width: 269px;
       height: 184px;
       background-color: #fff;
       border-radius: 16px;
-      .aboutCourse-card-price-button {
+    }
+    .course-price {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__price {
+        display: flex;
+        flex-direction: column;
+      }
+      &__oldPrice {
+        text-decoration: line-through;
+        color: #FF4F4F;
+        font-size: 24px;
+        font-family: 'Nunito', sans-serif;
+      }
+      &__newPrice {
+        color: #999;
+        font-size: 32px;
+        font-family: 'Nunito', sans-serif;
+      }
+      &__discount {
+        color: #999;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+      }
+      &__button {
         width: 237px;
         height: 42px;
         border-radius: 8px;
@@ -89,40 +118,9 @@
         border: none;
       }
     }
-    .aboutCourse-card-price {
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      .aboutCourse-card-price-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .aboutCourse-card-price-discount {
-          display: flex;
-          flex-direction: column;
-          .oldPrice {
-            text-decoration: line-through;
-            color: #FF4F4F;
-            font-size: 24px;
-            font-family: 'Nunito', sans-serif;
-          }
-          .newPrice {
-            color: #999;
-            font-size: 32px;
-            font-family: 'Nunito', sans-serif;
-          }
-        }
-        .discount {
-          color: #999;
-          font-size: 16px;
-          font-family: 'Nunito', sans-serif;
-        }
-      }
-    }
-    .aboutCourse-card-advantage {
+    .course-advantage {
       padding: 24px;
-      .aboutCourse-card-list {
+      &__list {
         padding: 0 24px;
         height: 100%;
         margin: 0;
@@ -130,18 +128,15 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
-        .aboutCourse-card-item {
-          color: #489EFD;
-          font-size: 16px;
-          font-family: 'Nunito', sans-serif;
-          
-          p {
-            color: #999;
-            margin: 0;
-          }
-          
-        }
-
+      }
+      &__item {
+        color: #489EFD;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        .item {
+          color: #999;
+          margin: 0;
+        }  
       }
     }
   }

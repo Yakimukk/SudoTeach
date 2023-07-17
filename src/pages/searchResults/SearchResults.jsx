@@ -1,21 +1,19 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './searchResults.scss';
 
 import { CourseCard } from '../../components/courseCard/CourseCard';
 
 export const SearchResults = () => {
 	return (
-		<Fragment>
-			<main className="main container">
-				<section className="searchResults">
-					<h2 className="searchResults-title">Результаты поиска</h2>
-					<div className="searchResults-cards">
-						{[...Array(3)].map((item, index) => (
-							<CourseCard key={index} />
-						))}
-					</div>
-				</section>
-			</main>
-		</Fragment>
+		<main className="main container">
+			<section className="search-results">
+				<h2 className="search-results__title">Результаты поиска</h2>
+				<div className="search-results__cards">
+					{[...Array(3)].map((item, index) => (
+						<CourseCard key={index} />
+					))}
+				</div>
+			</section>
+		</main>
 	);
 };

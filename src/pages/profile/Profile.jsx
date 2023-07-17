@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './profile.scss';
 import { PersonalData } from '../../components/personalData/PersonalData';
 import profileImg from '../../images/profileImg.svg';
@@ -7,32 +7,28 @@ import { MyTraining } from '../../components/myTraining/MyTraining';
 
 export const Profile = () => {
 	return (
-		<Fragment>
-			<main className="main container">
-				<section className="profile">
-					<div className="profile-bloks">
-						<div className="profile-info">
-							<img src={profileImg} alt="profileImg" />
-							<div className="profile-info-text">
-								<p className="profile-info-text-name">Тимур Сагитов</p>
-								<p className="profile-info-text-id">ID: 17062002</p>
-							</div>
+		<main className="main container">
+			<section className="profile">
+				<div className="profile__bloks">
+					<div className="profile__info">
+						<img src={profileImg} alt="profileImg" />
+						<div className="profile__text">
+							<p className="profile__name">Тимур Сагитов</p>
+							<p className="profile__id">ID: 17062002</p>
 						</div>
-						<button className="profile-personalData profile-button active">
-							<span>Личные данные</span>
-							<img src={arrow} alt="profileImg" />
-						</button>
-						<button className="profile-myTraining profile-button">
-							<span>Мое обучение</span>
-							<img src={arrow} alt="profileImg" />
-						</button>
 					</div>
-					<div className="profile-section">
-						{/* <PersonalData />  */}
-						<MyTraining />
-					</div>
-				</section>
-			</main>
-		</Fragment>
+					<button className="profile__button active">
+						<span>Личные данные</span>
+						<img src={arrow} alt="profileImg" />
+					</button>
+					<button className="profile__button">
+						<span>Мое обучение</span>
+						<img src={arrow} alt="profileImg" />
+					</button>
+				</div>
+				{/* <PersonalData />  */}
+				<MyTraining />
+			</section>
+		</main>
 	);
 };

@@ -1,32 +1,30 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import pyhtonCard from '../../images/pyhtonCard.svg';
 import './addedCourse.scss';
 import { Link } from 'react-router-dom';
 
 export const AddedCourse = () => {
 	return (
-		<Fragment>
-			<div className="courseCard">
-				<div className="courseCard-top">
-					<div className="courseCard-info">
-						<h3 className="courseCard-info-title">Pyhton. Для новичков</h3>
-						<span className="courseCard-info-text">
-							Pyhton. Для новичков: вы изучите синтаксис, переменные, условия,
-							циклы, функции, типы данных, операции. Pyhton. Для новичков: вы
-							изучите синтаксис, переменные, условия, циклы, функции, типы
-							данных, операции.Pyhton. Для новичков: вы изучите синтаксис,
-							переменные, условия, циклы, функции.
-						</span>
-					</div>
-					<img src={pyhtonCard} alt="pyhtonCard"></img>
+		<div className="added-course">
+			<div className="added-course__top">
+				<div className="added-course__block">
+					<h3 className="added-course__title">Pyhton. Для новичков</h3>
+					<span className="added-course__text">
+						Pyhton. Для новичков: вы изучите синтаксис, переменные, условия,
+						циклы, функции, типы данных, операции. Pyhton. Для новичков: вы
+						изучите синтаксис, переменные, условия, циклы, функции, типы данных,
+						операции.Pyhton. Для новичков: вы изучите синтаксис, переменные,
+						условия, циклы, функции.
+					</span>
 				</div>
-				<div className="courseCard-bottom">
-					<Link to="/">
-						<button className="courseCard-button">Продолжить курс</button>
-					</Link>
-					<div className="courseCard-info">1/15 модуль</div>
-				</div>
+				<img src={pyhtonCard} alt="pythonCard"></img>
 			</div>
-		</Fragment>
+			<div className="added-course__bottom">
+				<Link to="/">
+					<button className="added-course__button">Продолжить курс</button>
+				</Link>
+				<div className="added-course__info">1/15 модуль</div>
+			</div>
+		</div>
 	);
 };

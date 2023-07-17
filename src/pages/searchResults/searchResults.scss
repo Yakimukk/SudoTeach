@@ -1,38 +1,36 @@
-.main {
-  .searchResults {
-    margin-top: 14px;
-    margin-bottom: 54px;
-    .searchResults-title {
-      margin: 0;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 900;
-      font-size: 36px;
-      color: #333;
-    }
-    .searchResults-cards {    
-      display: flex;
-      flex-direction: column;
-      .courseCard {
+.search-results {
+  margin-top: 14px;
+  margin-bottom: 54px;
+  &__title {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    color: #333;
+  }
+  &__cards {    
+    display: flex;
+    flex-direction: column;
+    .course-card {
       width: 100%;
       margin-top: 12px;
       align-items: flex-start;
       flex-direction: row;
-      .courseCard-top {
+      &__top {
         max-height: 100%;
         max-width: 704px;
         flex-direction: row-reverse;
         align-items: start;
-        .courseCard-info {
-          padding-left: 16px;
-        }
       }
-      .courseCard-bottom {
+      &__top-info {
+        padding-left: 16px;
+      }
+      &__bottom {
         height: 100%;
         flex-direction: column;
         justify-content: space-between;
       }
     }
-    }
-
   }
+
 }

@@ -3,56 +3,47 @@
   .profile {
     padding-top: 24px;
     display: flex;
-    .profile-bloks {
+    &__bloks {
       margin-right: 24px;
       width: 317px;
-      .profile-info {
-        display: flex;
-        align-items: center;
-        margin-bottom: 24px;
-        .profile-info-text {
-          margin-left: 28px;
-          font-family: 'Nunito', sans-serif;
-          font-size: 20px;
-          font-weight: 400;
-          color: #999;
-          p {
-            margin: 0;
-          }
-        }
+    }
+    &__info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    &__text {
+      margin-left: 28px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: #999;
+    }
+    &__button {
+      padding: 31px 28px 27px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      height: 80px;
+      width: 317px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      color: #999;
+      font-size: 16px;
+      margin-bottom: 16px;
+      img {
+        stroke: #999
       }
-      .profile-button {
-        padding: 31px 28px 27px 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        height: 80px;
-        width: 317px;
-        border-radius: 8px;
-        border: none;
-        cursor: pointer;
-        color: #999;
-        font-size: 16px;
-        margin-bottom: 16px;
-        img {
-          stroke: #999
-        }
-      }
-      .profile-button:focus {
+      &:focus {
         background-color: #007AFF;
         color: #fff;
-        img {
-          stroke: #fff
-        }
-       }
-       .active {
-        background-color: #007AFF;
-        color: #fff;
-        img {
-          stroke: #fff
-        }
-       }
+      }
+    }
+    .active {
+      background-color: #007AFF;
+      color: #fff;
     }
   }
 }

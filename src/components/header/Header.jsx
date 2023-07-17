@@ -10,33 +10,33 @@ export const Header = () => {
 	if (pathname === '/cardProduct') return null;
 	return (
 		<header className="header container">
-			<nav className="navbar">
-				<NavLink className="navbar-brand" to="/">
+			<nav className="header__navbar">
+				<NavLink className="header__logo" to="/">
 					<img src={logo} alt="logo" />
 				</NavLink>
-				<ul className="navbar-nav">
-					<li className="nav-item">
-						<NavLink className="nav-link nav-link-button">
+				<ul className="header__nav">
+					<li className="header__item">
+						<NavLink className="header__link header__link--button">
 							<img src={icon} alt="icon"></img>
 							<span>Каталог</span>
 						</NavLink>
 					</li>
-					<li className="nav-item">
-						<form className="nav-search" action="/searchResults">
+					<li className="header__item">
+						<form className="header__search" action="/searchResults">
 							<button type="submit"></button>
 							<input type="text" placeholder="Поиск курсов"></input>
 						</form>
 					</li>
-					<li className="nav-item">
-						<NavLink className="nav-link" to="/profile">
+					<li className="header__item">
+						<NavLink className="header__link" to="/profile">
 							Мое обучение
 						</NavLink>
 					</li>
-					<li className="nav-item">
-						<NavLink className="nav-link">
+					<li className="header__item">
+						<NavLink className="header__link">
 							<span>Войти</span>
 						</NavLink>
-						<NavLink className="nav-link nav-link-profile">
+						<NavLink className="header__link header__link--profile">
 							<img src={profile} alt="profile"></img>
 						</NavLink>
 					</li>

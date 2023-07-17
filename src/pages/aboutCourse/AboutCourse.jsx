@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 export const AboutCourse = () => {
 	return (
 		<Fragment>
-			<main className="main container main-aboutCourse">
-				<section className="bannerCourse">
-					<div className="bannerCourse-info">
-						<div className="bannerCourse-button">Курс</div>
-						<h2 className="bannerCourse-title">Python для начинающих</h2>
-						<p className="bannerCourse-text">
+			<main className="main container main__about-course">
+				<section className="banner-course">
+					<div className="banner-course__info">
+						<div className="banner-course__button">Курс</div>
+						<h2 className="banner-course__title">Python для начинающих</h2>
+						<p className="banner-course__text">
 							В курсе Python для начинающих вы изучите основы программирования,
 							переменные, условия, циклы, функции, структуры данных и работу с
 							файлами. Практические задания помогут вам применить полученные
@@ -19,67 +19,63 @@ export const AboutCourse = () => {
 						</p>
 					</div>
 					<img
-						className="bannerCourse-pythonImg"
+						className="banner-course__pythonImg"
 						src={pythonImg}
 						alt="pythonImg"
 					/>
 				</section>
-				<section className="aboutCourse">
-					<div className="aboutCourse-info">
-						<h2 className="aboutCourse-info-title">Чему вы научитесь</h2>
-						<ul className="aboutCourse-info-list">
-							<li className="aboutCourse-item">
+				<section className="about-course">
+					<div className="about-course__info">
+						<h2 className="about-course__title">Чему вы научитесь</h2>
+						<ul className="about-course__list">
+							<li className="about-course__item">
 								Основы языка программирования Python
 							</li>
-							<li className="aboutCourse-item">
+							<li className="about-course__item">
 								Разработка ПО (OC Windows, парсеры)
 							</li>
-							<li className="aboutCourse-item">
+							<li className="about-course__item">
 								Веб-разработка (Django 3, Flask, HTML, CSS)
 							</li>
-							<li className="aboutCourse-item">
+							<li className="about-course__item">
 								Сетевое программирование (боты для мессенджера Telegram)
 							</li>
 						</ul>
-						<h2 className="aboutCourse-info-title">Как проходит обучение</h2>
-						<p className="aboutCourse-info-text">
+						<h2 className="about-course__title">Как проходит обучение</h2>
+						<p className="about-course__text">
 							Видео-лекции и практические задания по пройденным темам, общение с
 							преподавателем.
 						</p>
 					</div>
-					<div className="aboutCourse-card-price aboutCourse-card">
-						<div className="aboutCourse-card-price-info">
-							<div className="aboutCourse-card-price-discount">
-								<span className="oldPrice">2100 RUB</span>
-								<span className="newPrice">1050 RUB</span>
+					<div className="about-course__card course-price">
+						<div className="course-price__info">
+							<div className="course-price__price">
+								<span className="course-price__oldPrice">2100 RUB</span>
+								<span className="course-price__newPrice">1050 RUB</span>
 							</div>
-							<span className="discount">-50%</span>
+							<span className="course-price__discount">-50%</span>
 						</div>
 						<Link>
-							<button className="aboutCourse-card-price-button">
+							<button className="course-price__button">
 								Записаться на курс
 							</button>
 						</Link>
 					</div>
-					<div className="aboutCourse-card-advantage aboutCourse-card">
-						<ul className="aboutCourse-card-list">
-							<li className="aboutCourse-card-item">
-								<p className="aboutCourse-card-item-duration item">
-									Длительность
-								</p>
-								<p className="aboutCourse-card-item-duration item">4 месяца</p>
+					<div className="about-course__card course-advantage">
+						<ul className="course-advantage__list">
+							<li className="course-advantage__item">
+								<p className="course-advantage__duration item">Длительность</p>
+								<p className="course-advantage__duration item">4 месяца</p>
 							</li>
-							<li className="aboutCourse-card-item">
-								<p className="aboutCourse-card-item-lessons item">Уроки</p>
-								<p className="aboutCourse-card-item-lessons item">
-									9 модулей 54 урока{' '}
+							<li className="course-advantage__item">
+								<p className="course-advantage__lessons item">Уроки</p>
+								<p className="course-advantage__lessons item">
+									9 модулей 54 урока
 								</p>
 							</li>
-							<li className="aboutCourse-card-item">
-								<p className="aboutCourse-card-item-online item">Онлайн</p>
-								<p className="aboutCourse-card-item-online item">
-									В удобное время
-								</p>
+							<li className="course-advantage__item">
+								<p className="course-advantage__online item">Онлайн</p>
+								<p className="course-advantage__online item">В удобное время</p>
 							</li>
 						</ul>
 					</div>

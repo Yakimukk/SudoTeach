@@ -1,21 +1,21 @@
-.headerCourse {
+.header-course {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
   background-color: #489EFD;
   color: #999999;
-  .navbar {
+  &__navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .navbar-group {
-      display: flex;
-      align-items: center;
-    }
   }
-  .navbar-pagination {
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+  &__pagination {
     margin-left: 210px;
     display: flex;
     align-items: center;

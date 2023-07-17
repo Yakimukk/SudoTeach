@@ -18,7 +18,7 @@
   }
   .popular {
     margin-bottom: 42px;
-    .popular-courseCards {
+    &__course-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 24px;
@@ -27,7 +27,7 @@
   }
   .recommendation {
     margin-bottom: 16px;
-    .recommendation-courseCards {
+    &__course-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 24px;
@@ -36,7 +36,7 @@
   }
   .blog {
     margin-bottom: 36px;
-    .blog-blogCards {
+    &__cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 16px;

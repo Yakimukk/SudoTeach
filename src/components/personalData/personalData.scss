@@ -1,10 +1,10 @@
-.personalData {
+.personal-data {
   padding: 40px;
   height: 348px;
   width: 999px;
   border-radius: 12px;
   background-color: #fff;
-  .personalData-title {
+  &__title {
     margin: 0;
     margin-bottom: 24px;
     font-family: 'Ubuntu', sans-serif;
@@ -12,12 +12,12 @@
     font-weight: 400;
     color: #999;
   }
-  .personalData-form {
+  &__block {
+    margin-bottom: 24px;
+  }
+  &__form {
     display: flex;
     flex-direction: column;
-    .personalData-block {
-      margin-bottom: 24px;
-    }
     span {
       border-bottom: 1px solid #E7E7E7;
       margin-bottom: 24px;
@@ -40,28 +40,14 @@
       border: 1px solid #E7E7E7;
       border-radius: 15px;
     }
-    // label {
-    //   position: relative;
-    // }
-    // label::nth-child(-n + 2) {
-    //   margin-bottom: 24px;
-    // }
-    // label:nth-child(-n + 2):before {
-    //   content: '';
-    //   background: #F2F2F0;
-    //   height: 1px;
-    //   position: absolute;
-    //   bottom: -24px;
-    //   width: 100%;
-    // }
-    button {
-      background-color: #007AFF;
-      height: 42px;
-      width: 122px;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      color: #fff;
-    }
+  }
+  &__button {
+    background-color: #007AFF;
+    height: 42px;
+    width: 122px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
   }
 }

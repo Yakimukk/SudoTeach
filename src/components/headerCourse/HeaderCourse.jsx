@@ -8,13 +8,13 @@ export const HeaderCourse = () => {
 	const { pathname } = useLocation();
 	if (pathname !== '/cardProduct') return null;
 	return (
-		<header className="headerCourse container">
-			<nav className="navbar">
-				<div className="navbar-group">
-					<NavLink className="navbar-brand" to="/">
+		<header className="header-course container">
+			<nav className="header-course__navbar">
+				<div className="header-course__group">
+					<NavLink className="header-course__brand" to="/">
 						<img src={logoWhite} alt="logo" />
 					</NavLink>
-					<div className="navbar-pagination">
+					<div className="header-course__pagination">
 						<a href="#">1</a>
 						<a href="#" class="active">
 							2
@@ -25,7 +25,7 @@ export const HeaderCourse = () => {
 					</div>
 				</div>
 
-				<NavLink className="nav-link nav-link-profile">
+				<NavLink className="header-course__link header-course__link-profile">
 					<img src={profile} alt="profile"></img>
 				</NavLink>
 			</nav>

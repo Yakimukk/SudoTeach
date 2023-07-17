@@ -1,20 +1,20 @@
-.blogCard {
+.blog-card {
   width: 420px;
   height: 266px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  .blogCard-img {
+  &__img {
     border-radius: 16px;
   }
-  .blogCard-data {
+  &__data {
     padding-top: 8px;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #333;
   }
-  .blogCard-text {
+  &__text {
     margin: 0;
     padding-top: 1px;
     font-family: 'Nunito', sans-serif;

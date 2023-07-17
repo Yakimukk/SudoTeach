@@ -4,69 +4,70 @@
   display: flex;
   align-items: center;
   color: #999999;
-  .navbar {
+  &__navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
-    .navbar-nav {
-      padding: 0;
-      display: flex;
-      align-items: center;
-      list-style-type: none;
-      .nav-item {
-        display: flex;
-        align-items: center;
-        padding-left: 24px;
-        .nav-search {
-          position: relative;
-          width: 734px;
-          input, button {
-            border: none;
-            outline: none;
-            border-radius: 12px;
-          }
-          input { 
-            width: 100%;
-            height: 42px;
-            background: #fff;
-            padding-left: 47px;
-            font-family: 'Nunito', sans-serif;
-            font-size: 16px;
-            color: #999;
-            font-weight: 400;
-          }
-          button {
-            background-color: #fff;
-            height: 24px;
-            width: 24px;
-            cursor: pointer;
-            position: absolute;
-            top: 9px;
-            left: 11px;
-            background-image: url('../../images/search.svg');
-          }
-        }
-        .nav-link-button {
-          width: 126px;
-          height: 42px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          background-color: #fff;
-          border-radius: 8px;
-          padding: 0 20px;
-        }
-        .nav-link{
-          text-decoration: none;
-          font-family: 'Ubuntu', sans-serif;
-          color: #999;
-          font-weight: 400;
-        }
-        .nav-link-profile {
-          padding-left: 12px;
-        }
-      }
+    
+  }
+  &__nav {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+  }
+  &__search {
+    position: relative;
+    width: 734px;
+    input, button {
+      border: none;
+      outline: none;
+      border-radius: 12px;
     }
+    input { 
+      width: 100%;
+      height: 42px;
+      background: #fff;
+      padding-left: 47px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      color: #999;
+      font-weight: 400;
+    }
+    button {
+      background-color: #fff;
+      height: 24px;
+      width: 24px;
+      cursor: pointer;
+      position: absolute;
+      top: 9px;
+      left: 11px;
+      background-image: url('../../images/search.svg');
+    }
+  }
+  &__link--button {
+    width: 126px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0 20px;
+  }
+  &__link{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: #999;
+    font-weight: 400;
+  }
+  &__link--profile {
+    padding-left: 12px;
   }
 }

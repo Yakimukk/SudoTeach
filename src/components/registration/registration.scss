@@ -7,13 +7,11 @@
   background-image: url(../../images/popupBackground.svg);
   background-repeat: no-repeat;
   background-position: right;
-
-  .registration-form {
+  &__form {
     width: 386px;
     display: grid;
     grid-template-columns: repeat(2, 187px) ;
     grid-auto-flow: row dense;
-    
     gap: 8px;
     p {
       margin: 0 0 4px 0;
@@ -35,48 +33,48 @@
       font-weight: 400;
       height: 50px;
     }
-    .registration-form-email, .registration-form-password {
-      width: 386px;
-      grid-column: span 2;
-      input {
-        width: 100%;
-      }
+  }
+  &__email, &__password {
+    width: 386px;
+    grid-column: span 2;
+    input {
+      width: 100%;
     }
-    .registration-form-name {
-      width: 187px;
-      input {
-        width: 100%;
-      }
+  }
+  &__name {
+    width: 187px;
+    input {
+      width: 100%;
     }
-    .registration-form-submit {
-      margin-top: 24px;
-      width: 386px;
-      .registration-form-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        border: none;
-        outline: none;
-        border-radius: 15px;
-        background: #489EFD;
-        font-family: 'Nunito', sans-serif;
-        font-size: 16px;
-        color: #fff;
-        font-weight: 400;
-        height: 50px;
-      }
-      p {
-        text-align: center;
-        margin: 24px 0 0 0;
-        .link {
-          text-decoration: none;
-          font-family: 'Nunito', sans-serif;
-          font-size: 14px;
-          color: #333;
-          font-weight: 600;
-        }
-      }
+  }
+  &__submit {
+    margin-top: 24px;
+    width: 386px;
+    p {
+      text-align: center;
+      margin: 24px 0 0 0;
     }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: #489EFD;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    height: 50px;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
   }
 }
