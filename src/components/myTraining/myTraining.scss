@@ -8,3 +8,18 @@
   grid-template-columns: repeat(2, 430px);
   gap: 40px;
 }
+
+@media (max-width: 450px) {
+  .my-training { 
+    padding: 24px;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 8;
+    border-radius: 0;
+    margin-bottom: 24px;
+  }
+
+}

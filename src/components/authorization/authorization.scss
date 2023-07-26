@@ -39,6 +39,34 @@
       width: 100%;
     }
   }
+  &__help {
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__remember {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    input {
+      border: 1px solid #999;
+    }
+    span {
+      margin-left: 8px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+    }
+  }
+  &__forget {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    text-decoration: none;
+  }
   &__submit {
     margin-top: 24px;
     width: 386px;
@@ -68,5 +96,83 @@
     font-size: 14px;
     color: #333;
     font-weight: 600;
+  }
+}
+
+@media (max-width: 450px) {
+  .authorization-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 24px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    background: #fff;
+    background-image: url(../../images/popupBackMobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__form {
+      width: 327px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      p {
+        margin: 0 0 4px 0;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #999;
+      }
+      input {
+        padding-left: 20px;
+        font-size: 16px;
+      }
+    }
+    &__email, &__password {
+      width: 326px;
+    }
+    &__help {
+      height: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__remember {
+      height: 24px;
+      display: flex;
+      align-items: center;
+      input {
+        border: 1px solid #999;
+      }
+      span {
+        margin-left: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #999;
+      }
+    }
+    &__forget {
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      text-decoration: none;
+    }
+    &__submit {
+      margin-top: 24px;
+      width: 326px;
+      p {
+        text-align: center;
+        margin: 24px 0 0 0;
+      }
+    }
+    &__link {
+      font-size: 12px;
+    }
   }
 }

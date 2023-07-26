@@ -53,3 +53,37 @@
     border: none;
   }
 }
+
+@media (max-width: 450px) {
+  .added-course {
+    width: 326px;
+    height: 198px;
+    padding: 16px;
+    &__top {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__block {
+      max-height: 83px;
+      max-width: 206px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+    &__text {
+      font-size: 10px;
+    }
+    &__info {
+      font-size: 14px;
+    }
+    &__button {
+      width: 114px;
+      height: 32px;
+      font-size: 12px;
+    }
+    &__img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

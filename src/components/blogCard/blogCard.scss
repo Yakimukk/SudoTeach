@@ -23,3 +23,13 @@
     color: #999;
   }
 }
+
+@media (max-width: 450px) {
+  .blog-card {
+    width: 326px;
+    height: 269px;
+    &__img {
+      height: 200px;
+    }
+  }
+}

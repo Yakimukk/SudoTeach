@@ -5,15 +5,16 @@ import figmaBanner from '../../images/figmaBanner.png';
 import './main.scss';
 import { CourseCard } from '../../components/courseCard/CourseCard';
 import { BlogCard } from '../../components/blogCard/BlogCard';
+// import { Registration } from '../../components/registration/Registration';
 
 export const Main = () => {
 	return (
 		<main className="main container">
 			<section className="banner">
-				<NavLink>
+				<NavLink className="banner__phytonBanner">
 					<img src={phytonBanner} alt="phytonBanner"></img>
 				</NavLink>
-				<NavLink>
+				<NavLink className="banner__figmaBanner">
 					<img src={figmaBanner} alt="figmaBanner"></img>
 				</NavLink>
 			</section>
@@ -41,6 +42,7 @@ export const Main = () => {
 					))}
 				</div>
 			</section>
+			{/* <Registration /> */}
 		</main>
 	);
 };

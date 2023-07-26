@@ -17,7 +17,11 @@ export const AddedCourse = () => {
 						условия, циклы, функции.
 					</span>
 				</div>
-				<img src={pyhtonCard} alt="pythonCard"></img>
+				<img
+					className="added-course__img"
+					src={pyhtonCard}
+					alt="pythonCard"
+				></img>
 			</div>
 			<div className="added-course__bottom">
 				<Link to="/">

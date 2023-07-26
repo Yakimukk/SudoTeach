@@ -11,23 +11,25 @@ export const Profile = () => {
 			<section className="profile">
 				<div className="profile__bloks">
 					<div className="profile__info">
-						<img src={profileImg} alt="profileImg" />
+						<img className="profile__img" src={profileImg} alt="profileImg" />
 						<div className="profile__text">
 							<p className="profile__name">Тимур Сагитов</p>
 							<p className="profile__id">ID: 17062002</p>
 						</div>
 					</div>
-					<button className="profile__button active">
-						<span>Личные данные</span>
-						<img src={arrow} alt="profileImg" />
-					</button>
-					<button className="profile__button">
-						<span>Мое обучение</span>
-						<img src={arrow} alt="profileImg" />
-					</button>
+					<div className="profile__buttons">
+						<button className="profile__button active">
+							<span>Личные данные</span>
+							<img src={arrow} alt="profileImg" />
+						</button>
+						<button className="profile__button">
+							<span>Мое обучение</span>
+							<img src={arrow} alt="profileImg" />
+						</button>
+					</div>
 				</div>
-				{/* <PersonalData />  */}
-				<MyTraining />
+				<PersonalData />
+				{/* <MyTraining /> */}
 			</section>
 		</main>
 	);

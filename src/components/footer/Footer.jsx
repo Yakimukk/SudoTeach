@@ -4,6 +4,7 @@ import vk from '../../images/vk.svg';
 import inst from '../../images/inst.svg';
 import tw from '../../images/tw.svg';
 import fb from '../../images/fb.svg';
+import logoFooter from '../../images/logoFooter.svg';
 import './footer.scss';
 
 export const Footer = () => {
@@ -12,6 +13,7 @@ export const Footer = () => {
 	return (
 		<footer className="footer container">
 			<nav className="footer__navbar">
+				<img className="footer__logo" src={logoFooter} alt="logoFooter"></img>
 				<div className="footer__group">
 					<ul className="footer__nav">
 						<li className="footer__item">

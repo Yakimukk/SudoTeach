@@ -1,114 +1,86 @@
 import React, { Fragment } from 'react';
 import './cardProduct.scss';
+import { ProductTheory } from '../../components/productTheory/ProductTheory';
+import MediaQuery from 'react-responsive';
+
+const Sidebar = () => {
+	return (
+		<div className="card-product__sidebar menu__box">
+			<div className="card-product__modul">
+				<div className="card-product__title item ">1 Вводная часть</div>
+				<div className="card-product__lesson item active">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+			</div>
+			<div className="card-product__modul">
+				<div className="card-product__title item">1 Вводная часть</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+				<div className="card-product__lesson item">
+					1.1 Моделирование выдавли...
+				</div>
+			</div>
+		</div>
+	);
+};
 
 export const CardProduct = () => {
 	return (
 		<Fragment>
 			<main className="main container">
 				<section className="card-product">
-					<div className="card-product__sidebar">
-						<div className="card-product__modul">
-							<div className="card-product__title item">1 Вводная часть</div>
-							<div className="card-product__lesson item active">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
+					<MediaQuery minWidth={450}>
+						<Sidebar />
+					</MediaQuery>
+					<MediaQuery minWidth={300} maxWidth={450}>
+						{' '}
+						<div className="card-product__burger">
+							<div className="card-product__menu menu">
+								<input id="menu__toggle" type="checkbox" />
+								<label className="menu__btn" for="menu__toggle">
+									<span></span>
+								</label>
+								<h3 className="menu__title">1 Вводная часть</h3>
+								<Sidebar />
 							</div>
 						</div>
-						<div className="card-product__modul">
-							<div className="card-product__title item">1 Вводная часть</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-							<div className="card-product__lesson item">
-								1.1 Моделирование выдавли...
-							</div>
-						</div>
-					</div>
-					<div className="card-product__theory">
-						<h3 className="card-product__theory-title">1 Вводная часть</h3>
-						<div className="card-product__info">
-							<span>1.1 Моделирование </span>
-							<span>Шаг 1</span>
-						</div>
-						<div className="card-product__text">
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500swhen an unknown printer took a galley of type
-							and scrambled it to make a type specimen book. It has survived not
-							only five centuries,
-							<br />
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500swhen an unknown printer took a galley of type
-							and scrambled it to make a type specimen book. It has survived not
-							only five centuries,
-							<br />
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500swhen an unknown printer took a galley of type
-							and scrambled it to make a type specimen book. It has survived not
-							only five centuries,
-							<br />
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500swhen an unknown printer took a galley of type
-							and scrambled it to make a type specimen book. It has survived not
-							only five centuries,
-							<br />
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500swhen an unknown printer took a galley of type
-							and scrambled it to make a type specimen book. It has survived not
-							only five centuries,
-							<br />
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500swhen an unknown printer took a galley of type
-							and scrambled it to make a type specimen book. It has survived not
-							only five centuries,
-							<br />
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500swhen an unknown printer took a galley of type
-							and scrambled it to make a type specimen book. It has survived not
-							only five centuries,
-							<br />
-						</div>
+					</MediaQuery>
 
-						<button className="card-product__button">Следущий шаг</button>
-					</div>
+					<ProductTheory />
 				</section>
 			</main>
 		</Fragment>

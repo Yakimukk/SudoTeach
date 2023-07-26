@@ -78,3 +78,41 @@
     font-weight: 600;
   }
 }
+
+@media (max-width: 450px) {
+  .registration-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 24px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    background: #fff;
+    background-image: url(../../images/popupBackMobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 70px;
+    &__form {
+      width: 327px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) ;
+      grid-auto-flow: row dense;
+      gap: 24px;
+    }
+    &__email, &__password {
+      width: 327px;
+      grid-column: span 1;
+    }
+    &__name {
+      display: none
+    }
+    &__submit {
+      margin-top: 24px;
+      width: 327px;
+    }
+  }
+}

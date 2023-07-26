@@ -14,9 +14,18 @@ export const Authorization = () => {
 					<p>Введите пароль</p>
 					<input type="password" value="" onChange="" />
 				</label>
+				<div className="authorization-popup__help">
+					<div className="authorization-popup__remember">
+						<input type="checkbox"></input>
+						<span>Запомнить</span>
+					</div>
+					<Link className="authorization-popup__forget" to="/">
+						Забыли пароль?
+					</Link>
+				</div>
 				<label className="authorization-popup__submit">
 					<button className="authorization-popup__button" type="submit">
-						Зарегистрироваться
+						Войти
 					</button>
 					<p>
 						У вас нет аккаунта?&nbsp;

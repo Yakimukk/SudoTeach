@@ -4,9 +4,8 @@
 }
 
 .main {
-  padding-top: 16px;
-  padding-bottom: 16px;
   .card-product {
+    padding: 16px 50px;
     display: flex;
     &__sidebar {
       padding: 12px;
@@ -37,51 +36,151 @@
       color: #333;
       font-weight: 700;
     }
-    &__theory {
-      display: flex;
-      flex-direction: column;
-      margin-left: 24px;
-      padding: 24px 90px 50px 24px;
-      width: 999px;
-      background-color: #fff;
-      border-radius: 16px;
-    }
-    &__theory-title {
-      margin-bottom: 8px;
-      font-family: 'Nunito', sans-serif;
-      font-size: 16px;
-      color: #333;
-      font-weight: 700;
-    }
-    &__info {
-      padding-bottom: 13px;
-      display: flex;
-      justify-content: space-between;
-      font-family: 'Nunito', sans-serif;
-      font-size: 16px;
-      color: #999;
-      font-weight: 400;
-      border-bottom: 1px solid #999;
+  }
+}
 
-    }
-    &__text {
-      font-family: 'Nunito', sans-serif;
-      font-size: 16px;
-      color: #999;
-      font-weight: 400;
-      padding-top: 26px;
-    }
-    &__button {
-      align-self: self-end;
-      margin-top: 29px;
-      width: 153px;
-      height: 42px;
-      border: none;
-      border-radius: 8px;
-      background-color: #007AFF;
-      font-family: 'Nunito', sans-serif;
-      font-size: 16px;
-      color: #fff;
+@media (max-width: 450px) {
+  .main {
+    .card-product {
+      padding: 0px;
+      display: block;
+      &__burger  {
+        .menu {
+          padding: 0 12px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          height: 37px;
+          background-color: #fff;
+          width: 100%;
+          &__title {
+            padding-left: 16px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+          }
+        }
+        #menu__toggle {
+          opacity: 0;
+        }
+        #menu__toggle:checked ~ .menu__btn {
+          display: none;
+        }
+        #menu__toggle:checked ~ .menu__box {
+          visibility: visible;
+          top: 80px;
+          left: 0;
+        }
+        .menu__btn {
+          display: flex;
+          align-items: center;
+          position: block;
+          width: 18px;
+          height: 12px;
+          cursor: pointer;
+          z-index: 1;
+        }
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+          display: block;
+          position: absolute;
+          width: 18px;
+          height: 2px;
+          background-color: #999;
+          transition-duration: .25s;
+        }
+        .menu__btn > span::before {
+          content: '';
+          top: -5px;
+        }
+        .menu__btn > span::after {
+          content: '';
+          top: 5px;
+        }
+      }
+      &__sidebar {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        margin: 12px;
+        left: -100%;
+        width: 351px;
+        background-color: #fff;
+        border-radius: 16px;
+        transition-duration: .25s;
+        .item {
+          margin: 2px 0;
+          width: 327px;
+          height: 55px;
+          background-color: #EFF2F7;
+          border-radius: 8px;
+          &.active {
+            background-color: #007AFF;
+            color: #fff;
+          }
+        }
+      }
+      &__lesson {
+        display: block;
+        padding: 16px 36px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #999;
+      }
+      &__title {
+        padding: 16px 12px;
+        color: #333;
+        font-weight: 700;
+      }
+      &__theory {
+        display: none;
+        flex-direction: column;
+        margin-left: 24px;
+        padding: 24px 90px 50px 24px;
+        width: 999px;
+        background-color: #fff;
+        border-radius: 16px;
+      }
+      &__theory-title {
+        margin-bottom: 8px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        color: #333;
+        font-weight: 700;
+      }
+      &__info {
+        padding-bottom: 13px;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        color: #999;
+        font-weight: 400;
+        border-bottom: 1px solid #999;
+  
+      }
+      &__text {
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        color: #999;
+        font-weight: 400;
+        padding-top: 26px;
+      }
+      &__button {
+        align-self: self-end;
+        margin-top: 29px;
+        width: 153px;
+        height: 42px;
+        border: none;
+        border-radius: 8px;
+        background-color: #007AFF;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        color: #fff;
+      }
     }
   }
 }

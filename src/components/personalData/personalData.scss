@@ -26,20 +26,20 @@
       
       outline: none;
     }
-    input { 
-      margin-right: 16px;
-      position: relative;
-      padding: 16px 0 12px 21px;
-      width: 260px;
-      height: 50px;
-      background: #EFF2F7;
-      font-family: 'Nunito', sans-serif;
-      font-size: 16px;
-      color: #999;
-      font-weight: 400;
-      border: 1px solid #E7E7E7;
-      border-radius: 15px;
-    }
+  }
+  &__input  { 
+    margin-right: 16px;
+    position: relative;
+    padding: 16px 0 12px 21px;
+    width: 260px;
+    height: 50px;
+    background: #EFF2F7;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #999;
+    font-weight: 400;
+    border: 1px solid #E7E7E7;
+    border-radius: 15px;
   }
   &__button {
     background-color: #007AFF;
@@ -49,5 +49,44 @@
     border: none;
     cursor: pointer;
     color: #fff;
+  }
+}
+
+@media (max-width: 450px) {
+  .personal-data {
+    margin-bottom: 24px;
+    padding: 24px;
+    height: 389px;
+    width: 100%;
+    border-radius: 0;
+    background-color: #fff;
+    &__title {
+      margin-bottom: 16px;
+    }
+    &__block {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        display: none;
+      }
+    }
+    &__input { 
+      margin-right: 0;
+      margin-bottom: 8px;
+      position: relative;
+      padding: 16px 0 12px 21px;
+      width: 303px;
+    }
+    &__button {
+      margin-top: 8px;
+      width: 303px;
+    }
   }
 }

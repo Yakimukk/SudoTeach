@@ -4,6 +4,7 @@
   font-weight: 400;
   color: #333;
   .banner {
+    padding: 0 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -17,30 +18,91 @@
     font-weight: 900;
   }
   .popular {
+    padding: 0 50px;
     margin-bottom: 42px;
     &__course-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 24px;
-      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
     }
   }
   .recommendation {
+    padding: 0 50px;
     margin-bottom: 16px;
     &__course-cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 24px;
-      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
     }
   }
   .blog {
+    padding: 0 50px;
     margin-bottom: 36px;
     &__cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 16px;
-      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+  .main {
+    .banner {
+      padding: 24px 24px 0;
+      margin-top: 0;
+      margin-bottom: 24px;
+      &__figmaBanner {
+        display: none;
+      }
+      &__phytonBanner {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .title {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 18px;
+      font-weight: 900;
+    }
+    .popular {
+      padding: 0 24px;
+      margin-bottom: 24px;
+      &__course-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 12px;
+        justify-content: space-between;
+      }
+    }
+    .recommendation {
+      padding: 0 24px;
+      margin-bottom: 24px;
+      &__course-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 12px;
+        justify-content: space-between;
+      }
+    }
+    .blog {
+      padding: 0 24px;
+      margin-bottom: 24px;
+      &__cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 16px;
+        justify-content: space-between;
+      }
     }
   }
 }

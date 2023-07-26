@@ -1,7 +1,7 @@
 .main {
   min-height: calc(100vh - 216px);
   .profile {
-    padding-top: 24px;
+    padding: 24px 50px 0;
     display: flex;
     &__bloks {
       margin-right: 24px;
@@ -44,6 +44,76 @@
     .active {
       background-color: #007AFF;
       color: #fff;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .main {
+    .profile {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      &__bloks {
+        margin: 0;
+        width: 100%;
+      }
+      &__info {
+        height: 227px;
+        border-radius: 0 0 16px 16px;
+        padding: 0;
+        width: 100vw;
+        background-color: #489EFD;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+      &__img {
+        width: 70px;
+        height: 70px;
+      }
+      &__text {
+        text-align: center;
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #fff;
+      }
+      &__buttons {
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      &__button {
+        padding: 31px 28px 27px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        height: 80px;
+        width: 317px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        color: #999;
+        font-size: 16px;
+        margin-bottom: 16px;
+        img {
+          stroke: #999
+        }
+        &:focus {
+          background-color: #007AFF;
+          color: #fff;
+        }
+      }
+      .active {
+        background-color: #007AFF;
+        color: #fff;
+      }
     }
   }
 }

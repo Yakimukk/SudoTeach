@@ -1,7 +1,10 @@
 .footer {
-  padding-top: 30px;
+  padding: 30px 50px 0;
   height: 136px;
   background-color: #fff;
+  &__logo {
+    display: none;
+  }
   &__navbar {
     width: 100%;
     display: flex;
@@ -52,5 +55,43 @@
     color: #999;
     font-weight: 400;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    padding: 24px 24px 0;
+    height: 200px;
+    &__logo {
+      display: block;
+    }
+    &__navbar {
+      display: flex;
+      flex-direction: column;
+    }
+    &__group {
+      flex-direction: column-reverse;
+      span {
+        font-size: 10px;
+        padding-top: 12px;
+        padding-bottom: 26px;
+      }
+    }
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 7px;
+    }
+    &__link {
+      color: #007AFF;
+      font-size: 10px;
+      font-weight: 700;
+      padding-bottom: 4px;
+    }
+    &__list {
+      .footer__item {
+        padding-left: 0px;
+      }
+    }
   }
 }
