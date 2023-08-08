@@ -30,22 +30,22 @@ export const Footer = () => {
 				</div>
 				<ul className="footer__list">
 					<li className="footer__item">
-						<a className="footer__link">
+						<a href="/#" className="footer__link">
 							<img src={vk} alt="vk"></img>
 						</a>
 					</li>
 					<li className="footer__item">
-						<a className="footer__link">
+						<a href="/#" className="footer__link">
 							<img src={inst} alt="inst"></img>
 						</a>
 					</li>
 					<li className="footer__item">
-						<a className="footer__link">
+						<a href="/#" className="footer__link">
 							<img src={tw} alt="tw"></img>
 						</a>
 					</li>
 					<li className="footer__item">
-						<a className="footer__link">
+						<a href="/#" className="footer__link">
 							<img src={fb} alt="fb"></img>
 						</a>
 					</li>

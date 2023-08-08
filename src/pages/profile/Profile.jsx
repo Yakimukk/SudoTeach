@@ -3,7 +3,6 @@ import './profile.scss';
 import { PersonalData } from '../../components/personalData/PersonalData';
 import profileImg from '../../images/profileImg.svg';
 import arrow from '../../images/arrow.svg';
-import { MyTraining } from '../../components/myTraining/MyTraining';
 
 export const Profile = () => {
 	return (

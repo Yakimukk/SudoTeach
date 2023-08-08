@@ -8,14 +8,14 @@
   &__navbar {
     width: 100%;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
   }
   &__list {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     list-style-type: none;
     .footer__item {
       display: flex;
@@ -26,8 +26,8 @@
   &__group {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
     span {
       padding-top: 18px;
       font-family: 'Ubuntu', sans-serif;
@@ -39,8 +39,8 @@
   &__nav {
     padding: 0;
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: flex-start;
     list-style-type: none;
   }
   &__item {

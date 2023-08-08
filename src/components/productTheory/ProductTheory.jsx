@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react';
 import './productTheory.scss';
 
 export const ProductTheory = () => {

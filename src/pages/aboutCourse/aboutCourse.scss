@@ -46,7 +46,7 @@
     margin: 40px 0;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     &__info {
       max-width: 725px;
     }
@@ -127,7 +127,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: start;
+        align-items: flex-start;
       }
       &__item {
         color: #489EFD;
@@ -151,7 +151,7 @@
     .banner-course {
       display: flex;
       flex-direction: column;
-      align-items:flex-start;
+      align-items: flex-start;
       justify-content: center;
 
       padding: 0 24px;
@@ -185,7 +185,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: start;
+      align-items: flex-start;
       &__info {
         padding: 0 24px;
       }
@@ -219,7 +219,7 @@
         &__price {
           display: flex;
           flex-direction: column;
-          align-items: start;
+          align-items: flex-start;
         }
         &__oldPrice {
           font-size: 12px;
@@ -245,7 +245,7 @@
           flex-wrap: wrap;
           flex-direction: row;
           justify-content: space-between;
-          align-items: start;
+          align-items: flex-start;
         }
         &__item {
           color: #489EFD;
